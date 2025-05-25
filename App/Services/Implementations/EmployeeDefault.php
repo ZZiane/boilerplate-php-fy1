@@ -42,7 +42,6 @@ class EmployeeDefault implements EmployeeService
 
         $allowedFields = ['name', 'email', 'password'];
         $updateData = [];
-        print_r($data);
         foreach ($allowedFields as $field) {
             if (isset($data[$field])) {
                 $updateData[$field] = $field === 'password'

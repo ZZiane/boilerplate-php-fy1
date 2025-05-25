@@ -91,7 +91,7 @@ class EmployeeRepository extends RepositoryCache
                 $data['name'],
                 $data['salary'],
                 $data['email'],
-                $data['password'],
+                $data['password'] ?? null,
                 $data['photo'] ?? null
             );
     }
